@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>lolhook.xyz</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="transparent.png">
+        <meta name="color-scheme" content="light dark"> 
+    </head>
+
+    <body style="font-family: monospace;" >
+        <input id="popup" type="text" value="Copied to clipboard!" readonly="" style="display: none;">
+        <center>
+            <h1>lolhook.xyz</h1>
+            <div id="divider"></div>
+            <div id="title-seperate"></div>
+            <button id="script">
+                <span style="color: rgb(102, 217, 239);">loadstring</span><span style="color: rgb(255, 215, 26);">(</span><span style="color: rgb(174,129,255);">game</span>:<span style="color: rgb(166, 226, 46);">HttpGet</span><span style="color: rgb(218, 112, 214);">(</span><span style="color: rgb(230, 219, 116);">".../loader.lua"</span><span style="color: rgb(218, 112, 214);">)</span><span style="color: rgb(255, 215, 26);">)()</span>;
+            </button>
+
+            <h4>
+                <p">🟢 : Working<br>🟡 : Untested<br>🔴 : Down<br>🟠 : Updating</p>
+                <br>
+                <div id="divider"></div>
+
+                Arsenal 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/286090429/</a>
+                <div id="seperate"></div>
+
+                Counter Blox 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/301549746/</a>
+                <div id="seperate"></div>
+
+                Big Paintball 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/3527629287/</a>
+                <div id="seperate"></div>
+
+                Knife Ability Test (KAT) 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/621129760/</a>
+                <div id="seperate"></div>
+
+                Rush Point 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/5993942214/</a>
+                <div id="seperate"></div>
+
+                Bad Business 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/3233893879/</a>
+                <div id="seperate"></div>
+
+                Island Royale 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/1320186298/</a>
+                <div id="seperate"></div>
+
+                No Scope Sniping 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/5081773298/</a>
+                <div id="seperate"></div>
+
+                Pistol 1v1 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/6722284015/</a>
+                <div id="seperate"></div>
+
+                Phantom Forces 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/292439477/</a>
+                <div id="seperate"></div>
+
+                Strucid 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/2377868063/</a>
+                <div id="seperate"></div>
+
+                Michael's Zombies 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/8054462345/</a>
+                <div id="seperate"></div>
+
+                Project Lazarus 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/443406476/</a>
+                <div id="seperate"></div>
+
+                Apocalypse Rising 2 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/863266079/</a>
+                <div id="seperate"></div>
+
+                Zombie Rush 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/137885680/</a>
+                <div id="seperate"></div>
+
+                Zombie Attack 🟠
+                <br>
+                <a class="game-link" href="#">https://www.roblox.com/games/1240123653/</a>
+                <div id="seperate"></div>
+                <div id="divider"></div>
+            </h4>
+        </center>
+
+        <script>
+            const copyscript = document.getElementById("script");
+            const popup = document.getElementById("popup");
+
+            copyscript.addEventListener("click", () => {
+                const box = document.createElement("textarea");
+
+                box.value = 'loadstring(game:HttpGet("../loader.lua"))();';
+                document.body.appendChild(box);
+
+                box.select();
+
+                document.execCommand("copy");
+                document.body.removeChild(box);
+
+                popup.style.display = "block";
+                setTimeout(() => {popup.style.display = "none";}, 1000);
+            });
+
+            const links = document.getElementsByClassName("game-link");
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].href = links[i].textContent;
+            };
+        </script>
+    </body>
+</html>
