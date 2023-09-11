@@ -19,91 +19,91 @@
             </button>
 
             <h4>
-                <p">🟢 : working<br>🟡 : buggy<br>🔴 : patched/broken<br>🟠 : updating</p>
+                <p>🟢 : working<br>🟡 : buggy<br>🔴 : patched/broken<br>🟠 : updating</p>
                 <br>
                 <div id="divider"></div>
 
-                arsenal 🔴
+                <p id="arsenal">arsenal</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/286090429/</a>
                 <div id="seperate"></div>
 
-                counterblox 🔴
+                <p id="counterblox">counterblox</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/301549746/</a>
                 <div id="seperate"></div>
 
-                jailbird 🟠
+                <p id="jailbird">jailbird</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/6055959032/</a>
                 <div id="seperate"></div>
 
-                big paintball 🟠
+                <p id="big paintball">big paintball</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/3527629287/</a>
                 <div id="seperate"></div>
 
-                kat (knife ability test) 🟠
+                <p id="kat">kat</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/621129760/</a>
                 <div id="seperate"></div>
 
-                rush point 🟠
+                <p id="rush point">rush point</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/5993942214/</a>
                 <div id="seperate"></div>
 
-                bad business 🟠
+                <p id="bad business">bad business</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/3233893879/</a>
                 <div id="seperate"></div>
 
-                island royale 🟠
+                <p id="island royale">island royale</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/1320186298/</a>
                 <div id="seperate"></div>
 
-                noscope sniping 🟠
+                <p id="noscope sniping">noscope sniping</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/5081773298/</a>
                 <div id="seperate"></div>
 
-                pistol 1v1 🟠
+                <p id="pistol 1v1">pistol 1v1</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/6722284015/</a>
                 <div id="seperate"></div>
 
-                phantom forces 🟠
+                <p id="phantom forces">phantom forces</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/292439477/</a>
                 <div id="seperate"></div>
 
-                strucid 🟠
+                <p id="strucid">strucid</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/2377868063/</a>
                 <div id="seperate"></div>
 
-                michaels zombies 🟠
+                <p id="michaels zombies">michaels zombies</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/8054462345/</a>
                 <div id="seperate"></div>
 
-                project lazarus 🟠
+                <p id="project lazarus">project lazarus</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/443406476/</a>
                 <div id="seperate"></div>
 
-                ar2 🟠
+                <p id="ar2">ar2</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/863266079/</a>
                 <div id="seperate"></div>
 
-                zombie rush 🟠
+                <p id="zombie rush">zombie rush</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/137885680/</a>
                 <div id="seperate"></div>
 
-                zombie attack 🟠
+                <p id="zombie attack">zombie attack</p>
                 <br>
                 <a class="game-link" href="#">https://www.roblox.com/games/1240123653/</a>
                 <div id="seperate"></div>
@@ -111,30 +111,7 @@
             </h4>
         </center>
 
-        <script>
-            const copyscript = document.getElementById("script");
-            const popup = document.getElementById("popup");
-
-            copyscript.addEventListener("click", () => {
-                const box = document.createElement("textarea");
-
-                box.value = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/lolhook/lolhook.xyz/main/src/loader.lua"))();';
-                document.body.appendChild(box);
-
-                box.select();
-
-                document.execCommand("copy");
-                document.body.removeChild(box);
-
-                popup.style.display = "block";
-                setTimeout(() => {popup.style.display = "none";}, 1000);
-            });
-
-            const links = document.getElementsByClassName("game-link");
-
-            for (var i = 0; i < links.length; i++) {
-                links[i].href = links[i].textContent;
-            };
-        </script>
+        <script src="main.js"></script>
+        <script src="status.js"></script>
     </body>
 </html>
