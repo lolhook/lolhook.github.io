@@ -15,7 +15,7 @@
             <div id="divider"></div>
             <div id="title-seperate"></div>
             <button id="script">
-                <span style="color: rgb(102, 217, 239);">loadstring</span><span style="color: rgb(255, 215, 26);">(</span><span style="color: rgb(174,129,255);">game</span>:<span style="color: rgb(166, 226, 46);">HttpGet</span><span style="color: rgb(218, 112, 214);">(</span><span style="color: rgb(230, 219, 116);">"https://raw.githubusercontent.com/lolhook/lolhook.xyz/main/loader.lua"</span><span style="color: rgb(218, 112, 214);">)</span><span style="color: rgb(255, 215, 26);">)()</span>;
+                <span style="color: rgb(102, 217, 239);">loadstring</span><span style="color: rgb(255, 215, 26);">(</span><span style="color: rgb(174,129,255);">game</span>:<span style="color: rgb(166, 226, 46);">HttpGet</span><span style="color: rgb(218, 112, 214);">(</span><span style="color: rgb(230, 219, 116);">"https://raw.githubusercontent.com/lolhook/lolhook.xyz/main/src/loader.lua"</span><span style="color: rgb(218, 112, 214);">)</span><span style="color: rgb(255, 215, 26);">)()</span>;
             </button>
 
             
@@ -115,7 +115,7 @@
             copyscript.addEventListener("click", () => {
                 const box = document.createElement("textarea");
 
-                box.value = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/lolhook-xyz/lolhook.xyz/main/loader.lua"))();';
+                box.value = 'loadstring(game:HttpGet("https://raw.githubusercontent.com/lolhook/lolhook.xyz/main/src/loader.lua"))();';
                 document.body.appendChild(box);
 
                 box.select();
